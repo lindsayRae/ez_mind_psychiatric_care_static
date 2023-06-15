@@ -11,10 +11,20 @@ const emailService = process.env.nodemailer_email_service;
 const emailSubject = process.env.nodemailer_subject;
 const environment = process.env.node_env;
 
+const CONTACT_MESSAGE_FIELDS = {
+  name: 'Name',
+  email: 'Email',
+  message: 'Message',
+};
+
 const sendEmail = async (messageObj) => {
   let subject;
-  // This needs to be converted to a string
-  let emailText = JSON.stringify(messageObj);
+
+  const stringData = Object.entries(messageObj).reduce(
+    (str, [key, val]) =>
+      (str += `${CONTACT_MESSAGE_FIELDS[key]}: \n${val}\n\n`),
+    ''
+  );
 
   if (environment != 'production') {
     subject = 'test subject from dev';
@@ -32,14 +42,11 @@ const sendEmail = async (messageObj) => {
     },
   });
 
-  // ! format your emailText data into something better looking
-  // ! See lines 17 and 42
-
-  let mailOptions = {
+  const mailOptions = {
     from: emailUser,
     to: emailDestination,
     subject: subject,
-    text: emailText,
+    text: stringData,
   };
 
   try {
