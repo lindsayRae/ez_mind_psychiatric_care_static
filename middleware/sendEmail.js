@@ -11,20 +11,15 @@ const emailService = process.env.nodemailer_email_service;
 const emailSubject = process.env.nodemailer_subject;
 const environment = process.env.node_env;
 
-const CONTACT_MESSAGE_FIELDS = {
-  name: 'Name',
-  email: 'Email',
-  message: 'Message',
-};
-
 const sendEmail = async (messageObj) => {
   let subject;
 
-  const stringData = Object.entries(messageObj).reduce(
-    (str, [key, val]) =>
-      (str += `${CONTACT_MESSAGE_FIELDS[key]}: \n${val}\n\n`),
-    ''
-  );
+  let emailText = '';
+
+  for (let key in messageObj) {
+    let capitalized = key.charAt(0).toUpperCase() + key.slice(1);
+    emailText += `${capitalized}: \n${messageObj[key]}\n\n`;
+  }
 
   if (environment != 'production') {
     subject = 'test subject from dev';
@@ -46,7 +41,7 @@ const sendEmail = async (messageObj) => {
     from: emailUser,
     to: emailDestination,
     subject: subject,
-    text: stringData,
+    text: emailText,
   };
 
   try {
