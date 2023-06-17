@@ -188,6 +188,13 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* Start Custom Styles */
+.d-none {
+  display: none
+}
+
+/* End Custom Styles */
+
 hr {
   margin: 4.5rem 0;
   color: rgba(164, 174, 198, 0.2);

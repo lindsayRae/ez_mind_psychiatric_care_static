@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
   });
   app.get('/', async (req, res) => {
-    res.send('Hello Steven in prod');
+    res.send('Hello in prod');
   });
 }
 
