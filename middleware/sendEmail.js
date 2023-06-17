@@ -24,8 +24,6 @@ const sendEmail = async (messageObj) => {
   if (environment != 'production') {
     subject = 'test subject from dev';
   } else if (environment === 'production') {
-    // fill in later
-    // eventually I will want all the data as an object
     subject = emailSubject;
   }
 
