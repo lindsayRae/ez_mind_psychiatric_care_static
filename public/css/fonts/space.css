@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300;1,400;1,500;1,600;1,700");
-@import "../../fonts/space/space.css";
+@import '../../fonts/space/space.css';
 * {
   word-spacing: normal !important;
 }
@@ -21,7 +21,18 @@ blockquote,
   font-weight: 400;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .display-1,
 .display-2,
 .display-3,
@@ -79,12 +90,14 @@ blockquote,
   padding-bottom: 0.45rem;
 }
 
-.btn-group-sm > .btn, .btn-sm {
+.btn-group-sm > .btn,
+.btn-sm {
   padding-top: 0.45rem;
   padding-bottom: 0.35rem;
 }
 
-.btn-group-lg > .btn, .btn-lg {
+.btn-group-lg > .btn,
+.btn-lg {
   padding-top: 0.7rem;
   padding-bottom: 0.6rem;
 }
