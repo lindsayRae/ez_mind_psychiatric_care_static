@@ -25,3 +25,9 @@ Photo by <a href="https://unsplash.com/@guillaumedegermain?utm_source=unsplash&u
 Woman sunset
 Photo by <a href="https://unsplash.com/@sashafreemind?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sasha  Freemind</a> on <a href="https://unsplash.com/photos/frq5Q6Ne9k4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
+Blog 1
+Photo by <a href="https://unsplash.com/@frausnippe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kristin Snippe</a> on <a href="https://unsplash.com/photos/6NwrVDNsTx4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+  Blog 2
+  Photo by <a href="https://unsplash.com/@holliesantos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hollie Santos</a> on <a href="https://unsplash.com/photos/aUtvHsu8Uzk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
